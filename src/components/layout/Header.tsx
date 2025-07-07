@@ -8,9 +8,9 @@ export default function Header() {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2 flex-shrink-0">
+          <div className="flex items-center gap-2 flex-shrink-0 hover:cursor-pointer">
             <img src="/logo.svg" alt="logo" className="h-10 w-10" />
-            <Link href="/" className="text-2xl font-bold">
+            <Link href="/" className="text-2xl font-bold text-darkblue">
               Talento Network
             </Link>
           </div>
@@ -44,16 +44,20 @@ export default function Header() {
           </nav>
 
           {/* Auth Buttons */}
-          <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              className="text-gray-700 hover:text-gray-900 hover:bg-gray-100"
-            >
-              Sign In
-            </Button>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6">
-              Sign Up
-            </Button>
+          <div className="items-center space-x-4 hidden md:flex">
+            <Link href="/login">
+              <Button
+                variant="ghost"
+                className="text-gray-700 hover:bg-transparent"
+              >
+                Log in
+              </Button>
+            </Link>
+            <Link href="/signup">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-5 rounded-xl">
+                Sign Up
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -109,7 +113,7 @@ export default function Header() {
                 size="sm"
                 className="flex-1 text-gray-700 hover:text-gray-900 hover:bg-gray-100"
               >
-                Sign In
+                Log in
               </Button>
               <Button
                 size="sm"

@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Briefcase } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -12,7 +11,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img src="/logo.svg" alt="logo" className="h-10 w-10" />
-              <span className="font-semibold">Talento Network</span>
+              <span className="font-semibold tẽ">Talento Network</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Empowering your career journey with smarter, fastehr, and more
